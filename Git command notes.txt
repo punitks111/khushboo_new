@@ -1,0 +1,56 @@
+1. HEAD --> HEAD represents a specific commit in your repository. HEAD tracks the local state of the branch which is Committed changes,  not index /stagging nor Pushed files in the remote repository. To view what HEAD is pointing to, use git log -1 or git rev-parse HEAD.
+
+2. Working tree --> The working tree represents all files in your project directory, whether they’re committed, modified, or completely new. You can check the state of these files using git status. Working tree includes committed files, Stagged / indexed files, tracked and untracked files but not pushed files in the remote repository.
+
+Think of HEAD as a snapshot of the past (your last commit), while the working tree is your active workspace in the present
+
+3. Restore - This restores file.txt to how it was in the latest commit.
+
+
+
+- - 
+
+- The working tree represents your current local file system state, which may or may not match HEAD.
+Think of HEAD as a snapshot of the past (your last commit), while the working tree is your active workspace in the present. Want to go deeper into Git commands? I’d love to help!
+
+
+
+git status
+git add . | git add -a | git add *.txt
+git commit -m "comment"
+git commit -a "comment"
+git commit -a -m "comment" 
+- It adds and commit 
+git commit -am "commit" 
+-Works the same way - first adds then commit
+
+
+git branch
+git branch branchName | git branch -b branchName
+
+
+git diff
+git diff --cached
+
+x) echo "Any text that we want to add in the file" > firstfile.txt
+- Prints text or variable values.Helps in creating files.
+- Can be used inside Git scripts or commands.
+- To append the text use >> e.g. echo "Any text that we want to add in the file" >> firstfile.txt
+
+
+x) To Undo index / staged files use below
+	For single file : git restore --staged file.txt 
+	For all files :   git restore --staged .
+	or we can use git reset 
+	For single file  : git reset filename.txt
+	For all files : git reset .
+
+x) To Undo committed files back to unstaged
+	git reset HEAD~1
+
+x) To display a file use cat
+	cat filename.txt
+
+
+
+

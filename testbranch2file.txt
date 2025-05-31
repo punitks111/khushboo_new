@@ -1,0 +1,8 @@
+eadfaeda
+this is the first text file 
+I created using git command using touch then filenale with extension command
+after that I opened it using vim command then file name with ext
+now I am editing the file then to save first I need to press esc
+hen I need to enter :wq then press enter
+Entering this line to create conflict - edited from branch-2
+--------

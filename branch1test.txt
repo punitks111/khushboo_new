@@ -1,0 +1,10 @@
+
+hello welcome to our first branch text file
+I am getting many new things to learn
+I have created so far two new branches and while doing checkout I can clearly see the difference when I am switching from one branch to other branch.
+------- test
+---Test 2
+test3
+
+babbabab
+qqq
